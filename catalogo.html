@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title> 
+    <meta name="description" content="Shop on line de Maquillaje">
+    <meta name="keywords" content="makeup, maquillaje, modelos, belleza, productos de belleza">
+    <meta name="author" content="Cindy_Pereyra">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">             
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="div-header2">
+        <header class="header">
+            <nav class="nav-menu">
+                <a href="index.html" class="logo">
+                    <img src="img/logoWeb2.svg" alt="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a class="activo" href="catalogo.html">CATALOGO</a></li>
+                    <li><a href="error.html">TIENDA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+                <a class="compras"> <img src="img/bolsoBlanco.png" alt=""> </a>
+            </nav>
+        </header >
+    </div>
+
+
+
+
+    
+    <!--************* Grilla *************-->
+    <section>     
+        <div class="centrado">
+            <div class="tituloPag2">
+                <div class="col50">
+                    <h2>Catalogo</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ************ Sidebar ************-->       
+        <div class="flexbox">
+            <div id="sidebar">
+
+                    <ul>
+                        <li class="tituloPag2" id="buscador">
+                            <p>Buscar por Nombre</p>
+                            <input placeholder="nombre de artículo..." id="inputBuscador">
+                        </li>
+                    </ul>
+
+
+                    <li class="tituloPag2">
+                        <p>CATEGORÍA</p>
+                        <p>-</p>
+                    </li>
+                    <select id="categorias">
+                        <option></option>
+                        <option value="rostro">Rostro</option>
+                        <option value="labios">Labios</option>
+                        <option value="ojos">Ojos</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                    <button id="btnFiltrarCategoria">Filtrar</button>
+
+
+                    <li class="tituloPag2">
+                        <p>PRECIO</p>
+                        <p>-</p>
+                    </li>
+                    <li>
+                        <input type="number" placeholder="desde..." id="inputDesde">
+                    </li>
+                    <li>
+                        <input type="number" placeholder="hasta..." id="inputHasta">
+                    </li>
+                    <button id="btnFiltrarPorPrecio">Filtrar</button>
+                    
+
+            </div>
+            <!-- ************ Grilla ************-->  
+            <div class="centradoGrilla grillaProductos" id="productos">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!--*************  FOOTER *************-->
+    <footer>
+        <div class="centrado contenedor-pie">
+            <div class="col50">
+                <div class="lineaLista">
+                    <img src="img/logoWeb2.svg" alt="logo">
+                </div>
+                
+                <div class="lista">
+                    <h3>Horarios</h3>
+                    <ul>
+                        <li>L: 12hs a 17hs</li>
+                        <li>M: 12hs a 17hs </li>
+                        <li>M: 09hs a 17hs</li>
+                        <li>J: 10hs a 17hs</li>
+                        <li>V: 09hs a 21hs</li>
+                        <li>S: 10hs a 14hs</li>
+                        <li>D: 10hs a 13hs</li>
+                    </ul>
+                </div>
+                
+                <div class="table">
+                    <h3>Contacto</h3>
+                    <table class="content-table">
+                        <tr> 
+                            <th>Centro </th>
+                            <td>098123456</td> 
+                        </tr>
+                        <tr>
+                            <th>Pocitos </th> 
+                            <td>097123456</td> 
+                        </tr>
+                        <tr> 
+                            <th>Malvin </th> 
+                            <td>096123456</td> 
+                        </tr> 
+                        <tr> 
+                            <th>Buceo </th> 
+                            <td>095123456</td> 
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+            <div class="col50">
+                <div class="mapa flexbox ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3271.432663887049!2d-56.15945972441495!3d-34.92068445534794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1666486479043!5m2!1ses-419!2suy" width="550px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>       
+        </div>
+        <div class="centrado flexbox">
+            <div class="red-social">
+                <h4>Seguínos</h4>
+                <ul>
+                    <li><a target="_blank" href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/?lang=es" class="fa fa-twitter"></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/login.php" class="fa fa-facebook"></a></li>
+                </ul>
+            </div>
+            <div class="direccion"><p>Hecho con Amor</p></div>
+        </div>    
+    </footer>
+    <script src="js/datos.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
